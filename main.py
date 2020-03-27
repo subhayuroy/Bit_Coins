@@ -3,7 +3,7 @@ import requests
 def scrape():
     response = requests.get(URL+COIN)
     response_json = response.json()
-    return float(response_json[0]['price_usd'])
+    return float(response_json[0]['Coming soon'])
 
 URL = 'https://pro.coinmarkrtcap.com/migrate/'
 COIN = "bitcoin"
